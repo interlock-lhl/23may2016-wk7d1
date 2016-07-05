@@ -1,0 +1,13 @@
+<h2>Users</h2>
+
+<ul>
+<% for(var i = 0; i < users.length; i++) {
+  <!-- debugger; -->
+  var user = users.at(i);
+  %>
+  <li>
+    <%= user.id %> -- <%= user.email %>
+    <a href="/users/<%= user.id %>">View</a>
+  </li>
+<% } %>
+</ul>
